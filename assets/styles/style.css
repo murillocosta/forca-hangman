@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #591c3e;
+    --font-color: rgb(15, 242, 49);
+    --kb-color: #16731c;
+    --kb-key: rgba(89, 69, 62, 0.8);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Fredoka', sans-serif;
+    width: 100vw;
+    height: 90vh;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+h1 {
+    color: var(--font-color);
+    text-shadow: 1px 1px 5px #09440dbb;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#palavra__escondida {
+    font-size: 1.8rem;
+}
+
+footer {
+    color: black;
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    margin-top: 5rem;
+    
+
+}
+
+#forca__img {
+    /* background: url("./../images/forca6.png"); */
+    width: 25rem;
+    height: 25rem;
+    background-repeat: no-repeat;
+}
+
+/*estilização teclado*/
+
+.teclado__virtual {
+    margin-top: -35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    width: 3.5rem;
+    height: 3rem;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    background-color: var(--kb-color);
+    margin: 0.5rem;
+    margin-bottom: 0.313rem;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px var(--kb-key);
+    border-radius: 5px;
+    border: 1px solid var(--kb-key);
+    color: rgb(15, 14, 14);
+}
+
+.botaoreplay {
+    text-align: center;
+    vertical-align: sub;
+}
+
+#replay {
+    background-color: var(--kb-key);
+    box-shadow: 0px 2px 10px var(--kb-color);
+    
+}
+
+.botao:hover {
+    background-color: var(--kb-key);
+}
+
+#replay:hover {
+    background-color: var(--kb-color);
+    transform: scale(1.2);
+}
+
+#alertaFinal {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 68, 13);
+    width: 30%;
+    height: 25%;
+    border: 1px solid var(--kb-color);
+    border-radius: 1rem;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    visibility: hidden;
+    top: 55%;
+    box-shadow: 0px 2px 10px var(--kb-color);
+    letter-spacing: 0.1rem;
+        
+}
+
+#alertaFinal label {
+    font-size: 1rem;
+}
+
+
+#alertaFinal p {
+    font-size: 1.2rem;
+    
+}
+
+#alerta {
+    text-align: center;
+}
+
+#alertaFinal #replay{
+    margin-top: -20px;
+}
+
+
+/*fim estilização teclado*/
+
+@media (max-width: 795px) {
+    .botao {
+        width: 2.5rem;
+        height: 2rem; 
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .botao {
+        width: 2rem;
+        height: 2rem; 
+    }
+    footer {
+        font-size:0.6rem;
+    }
+    }
+
+
+@media (max-width: 520px) {
+    .botao {
+        margin: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+
+    footer {
+        font-size:0.6rem;
+        margin-top: 1rem;
+      
+    }
+
+   }
+
+   @media (max-width: 360px) {
+        .botao {
+            width: 1.7rem;
+            height: 1.7rem;
+        }
+   }

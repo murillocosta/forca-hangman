@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca v2.0</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="shortcut icon" href="./assets/images/hgman-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Joga da Forca v2.0</h1>
+    </header>
+    <main>
+        <!--img da forca-->
+        <section id="forca__img"></section>
+
+        <!--exibe palavra a ser descoberta-->
+        <section id="palavra__escondida"></section>
+        <section id="categoria__sorteada"></section>
+
+
+
+        <!--teclado virtual-->
+        <section id="teclado__virtual">
+            <div class="botoes__teclado">
+                <button id="tecla-Q" class="botao btn">Q</button>
+                <button id="tecla-W" class="botao btn">W</button>
+                <button id="tecla-E" class="botao btn">E</button>
+                <button id="tecla-R" class="botao btn">R</button>
+                <button id="tecla-T" class="botao btn">T</button>
+                <button id="tecla-Y" class="botao btn">Y</button>
+                <button id="tecla-U" class="botao btn">U</button>
+                <button id="tecla-I" class="botao btn">I</button>
+                <button id="tecla-O" class="botao btn">O</button>
+            </div>
+
+            <div class="botoes__teclado">
+                <button id="tecla-P" class="botao btn">P</button>
+                <button id="tecla-A" class="botao btn">A</button>
+                <button id="tecla-S" class="botao btn">S</button>
+                <button id="tecla-D" class="botao btn">D</button>
+                <button id="tecla-F" class="botao btn">F</button>
+                <button id="tecla-G" class="botao btn">G</button>
+                <button id="tecla-H" class="botao btn">H</button>
+                <button id="tecla-J" class="botao btn">J</button>
+                <button id="tecla-K" class="botao btn">K</button>
+            </div>
+
+            <div class="botoes__teclado">
+                <button id="tecla-L" class="botao btn">L</button>
+                <button id="tecla-Z" class="botao btn">Z</button>
+                <button id="tecla-X" class="botao btn">X</button>
+                <button id="tecla-C" class="botao btn">C</button>
+                <button id="tecla-V" class="botao btn">V</button>
+                <button id="tecla-B" class="botao btn">B</button>
+                <button id="tecla-N" class="botao btn">N</button>
+                <button id="tecla-M" class="botao btn">M</button>
+                <button onclick="document.location.reload(true)" id="replay" class="botao  botaoreplay"><i class="material-icons">replay</i></button>
+            </div>
+        </section>
+        <!-- Alerta de final de jogo -->
+        <section hidden id="alertaFinal">
+            <div id="alerta"></div>
+            <label for="replay">Clique no botão para jogar novamente.</label>
+            <button onclick="document.location.reload(true)" id="replay" class="botao  botaoreplay"><i class="material-icons">replay</i></button>
+        </section>
+    </main>
+    <!--rodapé-->
+    <footer>Coded by: <a
+        href="https://github.com/acesare">Anna Cesare</a>, <a href="https://github.com/carlosalbertoestrela">Carlos Estrela</a>, <a href="https://github.com/murillocosta">Murillo
+            Costa</a> e <a href="https://github.com/rafaelcarvalhods">Rafael Carvalho</a>.</footer>
+
+    <script src="scripts/jogodaforca.js"></script>
+</body>
+
+</html>
